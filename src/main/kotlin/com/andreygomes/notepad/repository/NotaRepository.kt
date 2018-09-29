@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository
 @Repository
 interface NotaRepository : MongoRepository<Nota, String> {
 
-    fun findByTituloContainingIgonoreCase(titulo: String): List<Nota>
+    fun findByTituloContainingIgnoreCase(titulo: String): List<Nota>
 
 }

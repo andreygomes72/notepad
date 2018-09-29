@@ -23,7 +23,7 @@ class NotaService {
     }
 
     fun buscarPorTitulo(titulo: String): List<Nota> {
-        return notaRepository.findByTituloContainingIgonoreCase(titulo)
+        return notaRepository.findByTituloContainingIgnoreCase(titulo)
     }
 
 }
